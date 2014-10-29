@@ -1,20 +1,20 @@
 {
-    "name": "zfcampus/zf-apigility-skeleton",
-    "description": "Skeleton Application for Apigility",
+    "name": "settermjd/freelance-forecaster-api",
+    "description": "The API for the Freelance Forecaster API",
     "type": "library",
     "license": "BSD-3-Clause",
     "keywords": [
         "api",
         "apigility",
         "framework",
-        "zf2"
+        "zf2",
+        "freelance"
     ],
-    "homepage": "http://apigility.org/",
+    "homepage": "https://github.com/settermjd/Freelance-Forecaster-API",
     "support": {
-        "email": "apigility-users@zend.com",
-        "irc": "irc://irc.freenode.net/apigility",
-        "source": "https://github.com/zfcampus/zf-apigility-skeleton",
-        "issues": "https://github.com/zfcampus/zf-apigility-skeleton/issues"
+        "email": "matthew@maltblue.com",
+        "source": "https://github.com/settermjd/Freelance-Forecaster-API",
+        "issues": "https://github.com/settermjd/Freelance-Forecaster-API/issues"
     },
     "config": {
     	"process-timeout": 5000
