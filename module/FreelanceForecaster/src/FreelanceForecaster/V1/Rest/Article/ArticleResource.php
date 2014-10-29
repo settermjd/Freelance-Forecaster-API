@@ -6,6 +6,13 @@ use ZF\Rest\AbstractResourceListener;
 
 class ArticleResource extends AbstractResourceListener
 {
+    protected $mapper;
+
+    public function __construct($mapper)
+    {
+        $this->mapper = $mapper;
+    }
+
     /**
      * Create a resource
      *
@@ -58,7 +65,8 @@ class ArticleResource extends AbstractResourceListener
      */
     public function fetchAll($params = array())
     {
-        return new ApiProblem(405, 'The GET method has not been defined for collections');
+        return $this->mapper->fetchAll();
+        //return new ApiProblem(405, 'The GET method has not been defined for collections');
     }
 
     /**

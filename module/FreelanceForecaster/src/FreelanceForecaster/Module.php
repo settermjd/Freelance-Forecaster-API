@@ -20,4 +20,16 @@ class Module implements ApigilityProviderInterface
             ),
         );
     }
+
+    public function getServiceConfig()
+    {
+        return array(
+            'factories' => array(
+                'FreelanceForecaster\V1\Rest\Article\ArticleMapper' => function ($sm) {
+                    $adapter = $sm->get('Zend\Db\Adapter\Adapter');
+                    return new \FreelanceForecaster\V1\Rest\Article\ArticleMapper($adapter);
+                },
+            ),
+        );
+    }
 }
