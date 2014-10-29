@@ -5,6 +5,7 @@ class ArticleResourceFactory
 {
     public function __invoke($services)
     {
-        return new ArticleResource();
+        $mapper = $services->get('FreelanceForecaster\V1\Rest\Article\ArticleMapper');
+        return new ArticleResource($mapper);
     }
 }
