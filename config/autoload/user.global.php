@@ -17,5 +17,10 @@
  */
 
 return array(
-    // ...
+    'db' => array(
+        'driver'   => 'Pdo_Pgsql',
+        'database' => 'freelanceforecaster',
+        'hostname' => '127.0.0.1',
+        'port'     => 54320
+    ),
 );
